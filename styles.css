@@ -1,0 +1,22 @@
+/* Shared, intentionally limited styling for the project draft. */
+:root { font-family: Arial, Helvetica, sans-serif; color: #263747; background: #f5f7f9; }
+* { box-sizing: border-box; }
+body { margin: 0; line-height: 1.6; }
+.container { width: min(920px, calc(100% - 32px)); margin: 0 auto; }
+.site-header { background: #214d59; color: white; padding: 16px 0; }
+.site-name { margin: 0; font-size: 1.35rem; font-weight: bold; }
+.site-nav { background: white; border-bottom: 1px solid #d8e1e7; }
+.site-nav ul { display: flex; flex-wrap: wrap; list-style: none; gap: 4px 16px; margin-top: 0; margin-bottom: 0; padding: 12px 0; }
+.site-nav a { color: #175866; }
+.site-nav a[aria-current="page"] { font-weight: bold; }
+main { background: white; margin-top: 24px !important; margin-bottom: 24px !important; padding: 26px; border: 1px solid #d8e1e7; border-radius: 6px; min-height: 55vh; }
+h1 { line-height: 1.2; } h2 { margin-top: 28px; }
+a { color: #175866; } a:focus-visible { outline: 3px solid #e88c35; outline-offset: 3px; }
+.module-list { columns: 2; } .module-list li { margin: 8px 0; }
+.learning-note { background: #eaf4f4; padding: 12px 20px; border-left: 4px solid #24727c; }
+.learning-note h2 { font-size: 1.1rem; margin-top: 0; }
+.draft-note { background: #fff7e8; padding: 12px; border-left: 4px solid #bf8230; }
+.site-footer { background: #214d59; color: white; padding: 10px 0; font-size: .85rem; }
+.skip-link { position: absolute; left: -10000px; top: auto; }
+.skip-link:focus { left: 10px; top: 10px; background: white; padding: 8px; }
+@media(max-width:600px) { .module-list { columns: 1; } main { padding: 16px; } }
